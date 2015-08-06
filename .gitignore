@@ -6,3 +6,8 @@ node_modules/
 ### WebStorm template
 
 .idea/
+
+
+### App template
+
+build/

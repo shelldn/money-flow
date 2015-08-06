@@ -4,6 +4,8 @@
   "author": "shelldn <yevgeny.shirin@gmail.com>",
   "devDependencies": {
     "coffee-script": "^1.9.3",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "run-sequence": "^1.1.2"
   }
 }
