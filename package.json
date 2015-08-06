@@ -4,6 +4,7 @@
   "author": "shelldn <yevgeny.shirin@gmail.com>",
   "devDependencies": {
     "coffee-script": "^1.9.3",
+    "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-cached": "^1.1.0",
     "gulp-debug": "^2.0.1",
