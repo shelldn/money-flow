@@ -3,6 +3,7 @@ seq   = require 'run-sequence'
 
 # Gulp tasks
 require './gulp_tasks/pages'
+require './gulp_tasks/styles'
 require './gulp_tasks/watch'
 require './gulp_tasks/clean'
 

@@ -10,6 +10,7 @@
     "gulp-debug": "^2.0.1",
     "gulp-jade": "^1.1.0",
     "gulp-remember": "^0.3.0",
+    "gulp-sass": "^2.0.4",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.4",
     "run-sequence": "^1.1.2"
