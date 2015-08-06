@@ -3,5 +3,8 @@
   "version": "0.3.0",
   "authors": [
     "shelldn <yevgeny.shirin@gmail.com>"
-  ]
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
 }

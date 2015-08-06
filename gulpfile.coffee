@@ -2,6 +2,7 @@ gulp  = require 'gulp'
 seq   = require 'run-sequence'
 
 # Gulp tasks
+require './gulp_tasks/bundle'
 require './gulp_tasks/pages'
 require './gulp_tasks/styles'
 require './gulp_tasks/watch'

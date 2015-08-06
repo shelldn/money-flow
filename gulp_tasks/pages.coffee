@@ -5,8 +5,10 @@ remember  = require 'gulp-remember'
 jade      = require 'gulp-jade'
 inject    = require 'gulp-inject'
 
-src     = 'src/pages/*.jade'
-assets  = gulp.src 'build/*.{js,css}', read: false
+src = 'src/pages/*.jade'
+
+assets = gulp.src 'build/application.{js,css}', read: false
+vendor = gulp.src 'build/vendor.{js,css}'     , read: false
 
 gulp.task 'pages', ->
   gulp.src src
@@ -22,6 +24,7 @@ gulp.task 'pages', ->
     # ---- entire fileset ---- #
     .pipe remember 'pages'
     .pipe inject assets
+    .pipe inject vendor, name: 'vendor'
     .pipe gulp.dest 'build/'
 
 module.exports = src: src
