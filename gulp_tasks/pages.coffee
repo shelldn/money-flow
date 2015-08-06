@@ -3,8 +3,10 @@ gutil     = require 'gulp-util'
 cached    = require 'gulp-cached'
 remember  = require 'gulp-remember'
 jade      = require 'gulp-jade'
+inject    = require 'gulp-inject'
 
-src = 'src/pages/*.jade'
+src     = 'src/pages/*.jade'
+assets  = gulp.src 'build/*.{js,css}', read: false
 
 gulp.task 'pages', ->
   gulp.src src
@@ -18,6 +20,8 @@ gulp.task 'pages', ->
       @emit 'end'
 
     # ---- entire fileset ---- #
+    .pipe remember 'pages'
+    .pipe inject assets
     .pipe gulp.dest 'build/'
 
 module.exports = src: src
