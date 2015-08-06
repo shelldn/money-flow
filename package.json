@@ -2,4 +2,8 @@
   "name": "money-flow",
   "version": "0.3.0",
   "author": "shelldn <yevgeny.shirin@gmail.com>",
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0"
+  }
 }
