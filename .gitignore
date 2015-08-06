@@ -11,3 +11,5 @@ node_modules/
 ### App template
 
 build/
+vendor/
+src/styles/bourbon/
