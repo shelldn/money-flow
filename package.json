@@ -20,5 +20,8 @@
     "karma-jasmine": "^0.3.6",
     "main-bower-files": "^2.9.0",
     "run-sequence": "^1.1.2"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
   }
 }
