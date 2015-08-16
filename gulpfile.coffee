@@ -8,5 +8,8 @@ require './gulp_tasks/styles'
 require './gulp_tasks/watch'
 require './gulp_tasks/clean'
 
+# Debug build task
+gulp.task ':debug', ['clean'], -> seq ['bundle', 'styles:debug'], 'pages:debug'
+
 # Gulp main task (production build)
 gulp.task 'default', ['clean'], -> seq 'pages'
