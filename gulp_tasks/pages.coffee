@@ -7,8 +7,8 @@ inject    = require 'gulp-inject'
 
 src = 'src/pages/*.jade'
 
-assets = gulp.src 'build/application.{js,css}', read: false
-vendor = gulp.src 'build/vendor.{js,css}'     , read: false
+assets = gulp.src 'application.{js,css}', { read: false, cwd: 'build/' }
+vendor = gulp.src 'build/vendor.{js,css}', read: false
 
 gulp.task 'pages', ->
   gulp.src src
