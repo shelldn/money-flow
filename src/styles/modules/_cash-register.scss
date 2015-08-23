@@ -1,0 +1,43 @@
+.cash-register {
+  padding: 20px;
+  border: 1px solid black;
+
+  @include span-columns(6);
+
+  &.cash-register-income {
+    border-color: dodgerblue;
+
+    .cr-cash-input,
+    .cr-case-input {
+      border-color: lighten(dodgerblue, 20%);
+    }
+  }
+
+  &.cash-register-outgo {
+    border-color: tomato;
+
+    .cr-cash-input,
+    .cr-case-input {
+      border-color: lighten(tomato, 20%);
+    }
+  }
+
+  .cr-cash-input,
+  .cr-case-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+  }
+  
+  .cr-cash-input {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .cr-case-input {
+    margin-top: 20px;
+    line-height: 30px;
+  }
+}

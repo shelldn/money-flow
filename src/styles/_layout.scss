@@ -1,4 +1,14 @@
+.container {
+  width: 700px;
+  @include outer-container;
+}
+
 #header {
   height: $header-height;
   text-align: center;
+
+  .logo {
+    line-height: $header-height;
+  }
 }
+

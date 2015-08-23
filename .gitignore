@@ -13,3 +13,4 @@ node_modules/
 build/
 vendor/
 src/styles/bourbon/
+src/styles/neat/

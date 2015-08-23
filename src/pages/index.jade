@@ -6,8 +6,14 @@ html(lang="en")
     // endinject
     // inject:css
     // endinject
-  body
+  body: .container
     header#header(role="banner")
       a.logo(href="/"): img(src="logo.png")
     #main
+      .cash-register.cash-register-income: form(novalidate)
+        input.cr-cash-input(type="number", placeholder="0")
+        input.cr-case-input(type="text", placeholder="Tab here to enter income case")
+      .cash-register.cash-register-outgo
+        input.cr-cash-input(type="number", placeholder="0")
+        input.cr-case-input(type="text", placeholder="Tab here to enter outgo case")
     footer#footer
