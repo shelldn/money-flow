@@ -5,6 +5,7 @@
     "shelldn <yevgeny.shirin@gmail.com>"
   ],
   "dependencies": {
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "angular": "~1.4.4"
   }
 }

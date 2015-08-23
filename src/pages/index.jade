@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="en", ng-app="mf")
   head
     title Money Flow
     // vendor:css
@@ -10,10 +10,11 @@ html(lang="en")
     header#header(role="banner")
       a.logo(href="/"): img(src="logo.png")
     #main
-      .cash-register.cash-register-income: form(novalidate)
-        input.cr-cash-input(type="number", placeholder="0")
-        input.cr-case-input(type="text", placeholder="Tab here to enter income case")
-      .cash-register.cash-register-outgo
-        input.cr-cash-input(type="number", placeholder="0")
-        input.cr-case-input(type="text", placeholder="Tab here to enter outgo case")
+      mf-cash-register.cash-register-income
+      mf-cash-register.cash-register-outgo
     footer#footer
+
+    // vendor:js
+    // endinject
+    // inject:js
+    // endinject
